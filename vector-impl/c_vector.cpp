@@ -157,6 +157,10 @@ public:
     int capacity() {
       return _capacity;
     }
+
+    void afree() {
+      free(arr);
+    }
 };
 
 int main() {
@@ -203,5 +207,5 @@ int main() {
   
   int TARGET = 30;
   std::cout << TARGET << " found at index: " << na.index(TARGET) << std::endl;
-
+  na.afree();
 }
