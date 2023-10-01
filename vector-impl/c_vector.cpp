@@ -48,7 +48,7 @@ public:
     }
 
     void prepend(int elem) {
-      this->insert(0, elem);
+      insert(0, elem);
     }
 
     void del(int index) {
@@ -159,7 +159,7 @@ public:
     }
 
     void afree() {
-      free(arr);
+      delete [] arr;
     }
 };
 
